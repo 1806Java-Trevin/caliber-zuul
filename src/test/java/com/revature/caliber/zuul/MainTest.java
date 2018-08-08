@@ -14,10 +14,10 @@ public class MainTest {
 		app = new ZuulAPIGatewayApplication();
 	}
 
-	/*@Test
-	public void testMain() {
+	@Test
+	public void testGetTest() {
 		assertEquals("This is a passing test", "Test", app.getTest());
-	}*/
+	}
 	
 	@Test
 	public void testMain() {

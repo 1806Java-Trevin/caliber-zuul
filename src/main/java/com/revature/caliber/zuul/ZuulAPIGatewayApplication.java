@@ -12,13 +12,13 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableHystrix
 @EnableDiscoveryClient
 public class ZuulAPIGatewayApplication {
-	// private String test = "Test";
+	private String test = "Test";
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(ZuulAPIGatewayApplication.class, args);
 	}
 	
-	/*public String getTest() {
+	public String getTest() {
 		return test;
-	}*/
+	}
 	
 }
