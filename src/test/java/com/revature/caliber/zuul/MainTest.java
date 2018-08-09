@@ -7,19 +7,20 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class MainTest {
-	static ZuulAPIGatewayApplication app = new ZuulAPIGatewayApplication();
+	static ZuulAPIGatewayApplication app;
 
-	@Test
-	public void testGetTest() {
-		assertEquals("This is a passing test", "Test", app.getTest());
+	@BeforeClass
+	public static void createSpring() {
+		app = new ZuulAPIGatewayApplication();
 	}
 
 	@Test
 	public void testMain() {
-		try {
-			app.main(new String[] { "Test" });
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		assertEquals("This is a passing test", "Test", app.getTest());
+	}
+
+	@AfterClass
+	public static void deleteSpring() {
+		app = null;
 	}
 }
