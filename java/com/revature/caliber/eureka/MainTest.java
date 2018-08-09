@@ -14,6 +14,7 @@ static EurekaDiscoveryApplication app;
 	}
 
 	@Test
+<<<<<<< HEAD
 	public void testGetTest() {
 		assertEquals("This is a passing test", "Test", app.getTest());
 	}
@@ -27,6 +28,10 @@ static EurekaDiscoveryApplication app;
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+=======
+	public void testMain() {
+		assertEquals("This is a passing test", "Test", app.getTest());
+>>>>>>> 9e2545a781128baa8f926d7595415bda31657ac1
 	}
 	
 	@AfterClass
