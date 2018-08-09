@@ -17,7 +17,7 @@ public class MainTest {
 	@Test
 	public void testMain() {
 		try {
-			ZuulAPIGatewayApplication.main(new String[] { "Test" });
+			app.main(new String[] { "Test" });
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
